@@ -1,9 +1,9 @@
 <h1 align="center">PWA</h1>
 
--PWA
--geolocalisation
+- PWA
+- geolocalisation
 
 <h3>Librairie</h3>
 
--JAWG map
--fontawesome
+- JAWG map
+- fontawesome
