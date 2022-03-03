@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <!-- font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Serif:wght@200&family=Roboto:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <!-- fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+        <!-- jawg map -->
+        <link
+            href="https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.js"></script>
+        <script src="https://api.jawg.io/libraries/jawg-places@latest/jawg-places.js?access-token=9Bxa3ORRdm98iHlKthRllCUs7OOGzPdSfVpY7rdLMpwpang4QGEZDclpiEkRAETS"></script>
+
+        <!-- pwa -->
+        <link rel="manifest" href="manifest.json" />
+        <!-- ios support -->
+        <link rel="apple-touch-icon" href="/icones/paris_tour72.png" />
+        <link rel="apple-touch-icon" href="/icones/paris_tour96.png" />
+        <link rel="apple-touch-icon" href="/icones/paris_tour128.png" />
+        <link rel="apple-touch-icon" href="/icones/paris_tour144.png" />
+        <link rel="apple-touch-icon" href="/icones/paris_tour152.png" />
+        <link rel="apple-touch-icon" href="/icones/paris_tour192.png" />
+        <link rel="apple-touch-icon" href="/icones/paris_tour384.png" />
+        <link rel="apple-touch-icon" href="/icones/paris_tour512.png" />
+        <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+        <meta name="theme-color" content="#db4938" />
+
+        <title>Villes de France PWA</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="/images/france.jpg">
+    </head>
+
+    <body>
+        <div class="container_banner">
+            <span class="banner_install">Installer sur l'écran d'accueil</span>
+            <span class="banner_notifs">Recevoir les notifications</span>
+        </div>
+        <main>
+            <section class="container_part1">
+                <h1>Villes de France</h1>
+                <div class="container"></div>
+            </section>
+            <section class="container_map">
+                <div class="map" id="mapid"></div>
+                <div class="container_location">
+                    <p class="location_text">Votre position actuelle:</p>
+                    <p id="latitude"></p>
+                    <p id="longitude"></p>
+                    <p id="altitude"></p>
+                </div>
+            </section>
+        </main>
+        <footer>&#169;2022</footer>
+        <script src="app.js"></script>
+    </body>
+</html>
