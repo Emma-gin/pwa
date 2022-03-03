@@ -3,7 +3,7 @@
 - PWA
 - geolocalisation
 
-<h3>Librairie</h3>
+<h3>Librairies</h3>
 
 - JAWG map
 - fontawesome
